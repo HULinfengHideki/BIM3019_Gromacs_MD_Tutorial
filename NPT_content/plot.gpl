@@ -1,0 +1,21 @@
+###########################################################################################
+# This is a gnuplot script. More can be found on http://gnuplot.sourceforge.net/demo_5.4. #
+###########################################################################################
+set terminal pngcairo size 600,400 enhanced font "Helvetica,16"
+set output "density.png"
+set title "Gromacs Density"
+set xlabel "Time (ps)" 
+set ylabel "Density (kg/m^3)"
+
+# Graph setting here
+set tics nomirror font "Helvetica,16"
+set key samplen 0.3 spacing 0.8 font "Helvetica,16"
+
+# mean value
+mean(x)=avg
+fit mean(x) "density.xvg" u 1:2 via avg
+
+# Plot data here
+plot "density.xvg" u 1:2 w l lc rgb "blue" lw 2.0 title "density"
+
+

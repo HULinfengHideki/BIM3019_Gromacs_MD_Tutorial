@@ -1,0 +1,60 @@
+
+
+*******************************************************************************
+Fri Mar 18 17:03:41 2022
+
+
+FIT:    data read from "pressure.xvg" u 1:2
+        format = x:z
+        #datapoints = 101
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mean(x)
+	mean(x)=avg
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   avg          
+   0 3.3516445057e+06   0.00e+00  1.00e+00    1.000000e+00
+   2 3.3478221110e+06  -1.10e-02  1.00e-02   -5.151863e+00
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 3.34782e+06
+rel. change during last iteration : -1.09742e-07
+
+degrees of freedom    (FIT_NDF)                        : 100
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 182.971
+variance of residuals (reduced chisquare) = WSSR/ndf   : 33478.2
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+avg             = -5.15186         +/- 18.21        (353.4%)
+
+
+*******************************************************************************
+Fri Mar 18 17:16:05 2022
+
+
+FIT:    data read from "density.xvg" u 1:2
+        format = x:z
+        #datapoints = 101
+        residuals are weighted equally (unit weight)
+
+function used for fitting: mean(x)
+	mean(x)=avg
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   avg          
+   0 1.0552371826e+08   0.00e+00  1.00e+00    1.000000e+00
+   3 1.3460291252e+03  -7.39e-03  1.00e-03    1.023143e+03
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1346.03
+rel. change during last iteration : -7.38518e-08
+
+degrees of freedom    (FIT_NDF)                        : 100
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.66883
+variance of residuals (reduced chisquare) = WSSR/ndf   : 13.4603
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+avg             = 1023.14          +/- 0.3651       (0.03568%)
